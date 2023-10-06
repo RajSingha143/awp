@@ -1,0 +1,1619 @@
+Practical No 1
+Write a program in c# to print "HELLO"
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace hello
+{
+class Program
+{
+static void Main(string[] args)
+{
+Console.WriteLine("HELLO");
+Console.ReadKey();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 2
+Write a c# program which will take 2 variables along with their
+values and print addition
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace addition
+{
+public class add
+{
+public int num1;
+public int num2;
+}
+}
+class MYADITION
+{
+static void Main(string[] args)
+https://E-next.in
+{
+Addition.add a = new Addition.add();
+a.num1 = 55;
+a.num2 = 22;
+Console.WriteLine(a.num1 + a.num2);
+Console.ReadKey();
+}
+}
+Output
+https://E-next.in
+Practical No 3
+Create a C# console application which will take 2 string 1st
+"C#.Net" 2nd "ADV.Java" and perform following method.
+1)Compare 2)Concatenation 3)Lower Case 4) Upper Case
+5)Insert 6)Clone 7)Replace
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace 2string
+{
+class Program
+{
+static void Main(string[] args)
+{
+string str1 = "C#.NET";
+string str2 = "ADV.java";
+int res = String.Compare(str1,str2);
+Console.WriteLine("str1:" + str1);
+https://E-next.in
+Console.WriteLine("str2:" + str2);
+Console.WriteLine("Compare Strings:" + res.ToString());
+string str3 = String.Concat(str1, str2);
+Console.WriteLine("Concat 2 string: " + str3);
+str3 = str1.ToLower();
+Console.WriteLine("Lowercase:" + str3.ToString());
+str3 = str1.ToUpper();
+Console.WriteLine("Uppercase:" + str3.ToString());
+Object obj = (object)12;
+str3 = String.Concat(str1, obj);
+Console.WriteLine("Concat Object:" +
+str3); object objClone = str1.Clone();
+Console.WriteLine("Clone:" + objClone.ToString());
+string str4 = "ppp";
+char[] chrs = new char[2];
+str4.CopyTo(0, chrs, 0, 2);
+str3 = str1.Insert(2, "bbb");
+Console.WriteLine("Insert string:" + str3.ToString());
+https://E-next.in
+str3 = str2.Replace('A', 'Y');
+Console.WriteLine("Replace string:" + str3.ToString());
+Console.ReadKey();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 4
+write a porgram to perfrom a arithmetic operation in c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace arithmetic
+{
+namespace Addition
+{
+public class add
+{
+public int num1;
+public int num2;
+}
+}
+class MYADITION
+{
+https://E-next.in
+static void Main(string[] args)
+{
+Addition.add a = new Addition.add();
+a.num1 = 55;
+a.num2 = 22;
+Console.WriteLine(a.num1 + a.num2);
+Console.WriteLine(a.num1 - a.num2);
+Console.WriteLine(a.num1 / a.num2);
+Console.WriteLine(a.num1 * a.num2);
+Console.ReadKey();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 5
+write a Fibonacci program in c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace fibonacci
+{
+class Program
+{
+static void Main(string[] args)
+{
+int a=0;
+int b=1;
+int c=1;
+Console.WriteLine(a);
+Console.WriteLine(b);
+while (true)
+{
+https://E-next.in
+c = a + b;
+if (c >= 200)
+{
+break;
+}
+Console.WriteLine(c);
+a = b;
+b = c
+}
+Console.Read();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 6
+write a palindrome program in c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace palindrome
+{
+class Program
+{ static void Main(string[] args)
+{
+string s,revs="";
+Console.WriteLine(" Enter string");
+s = Console.ReadLine();
+for (int i = s.Length-1; i >=0; i--
+) revs += s[i].ToString();
+}
+if (revs == s)
+{
+Console.WriteLine("String is Palindrome \n Entered String Was {0} and
+reverse string is {1}", s, revs);
+}
+https://E-next.in
+else
+{
+Console.WriteLine("String is not Palindrome \n Entered String Was {0}
+and reverse string is {1}", s, revs);
+}
+Console.ReadKey();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 7
+write a prime number program in c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace primenumber
+{
+class Program
+{
+static void Main(string[] args)
+{
+int i,j,n=0,n1=0;
+Console.WriteLine("Enter The n value" );
+n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Prime Numbers are:");
+for(i=2;i<=n;i++)
+{
+for(j=1;j<=i;j++)
+{
+https://E-next.in
+if(i%j==0)
+{
+n1++;
+}
+}
+if(n1==2)
+Console.WriteLine(i);
+n1=0;
+}
+Console.ReadLine();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 8
+write a program in c# to find factorial of number
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace factorial
+{
+class Program
+{
+static void Main(string[] args)
+{
+Console.WriteLine("Program To Find a Factorial of a given
+Number"); int n;
+long f = 1;
+Console.WriteLine("Enter a Number");
+n = Convert.ToInt32(Console.ReadLine());
+for (int i = 1; i < n; i++)
+{
+https://E-next.in
+f += f * i;
+}
+Console.WriteLine("Factorial of {0} is:{1}",n,f);
+Console.ReadLine();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 9
+write a program in c# to preform whether the no. is Armstrong or not
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace armstrong
+{
+class Program
+{
+static void Main(string[] args)
+{
+int number, remainder, sum = 0;
+Console.Write("enter the Number");
+number = int.Parse(Console.ReadLine());
+for (int i = number; i > 0; i = i / 10)
+{
+remainder = i % 10;
+sum = sum + remainder*remainder*remainder;
+https://E-next.in
+}
+if (sum == number)
+{
+Console.Write("Entered Number is an Armstrong Number");
+}
+else
+Console.Write("Entered Number is not an Armstrong Number");
+Console.ReadLine();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 10
+write a program in C# To Count the number of digits.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace countnumber
+{
+class Program
+{
+static void Main(string[] args)
+{
+int n, b = 0;
+Console.WriteLine("enter a number");
+n = Int32.Parse(Console.ReadLine());
+while (n > 0)
+{
+b++;
+n = n / 10;
+https://E-next.in
+}
+Console.WriteLine("\n the number of digits =" + b);
+Console.ReadKey();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 11
+Write a program to reverse a number using C#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace reversenumber
+{
+class Program
+{
+static void Main(string[] args)
+{
+int n, r;
+Console.WriteLine("enter a
+number:"); n =
+Int32.Parse(Console.ReadLine()); do
+{
+r = n % 10;
+Console.Write
+(r); n = n / 10;
+}
+https://E-next.in
+while (n > 0);
+Console.ReadKey ();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 12
+write a program in C# to print the sum of even number of first "n"
+natural number.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace naturalnumber
+{
+class Program
+{
+static void Main(string[] args)
+{
+int n, sum = 0;
+Console.WriteLine("Enter a Number:");
+n = Int32.Parse(Console.ReadLine());
+for (int i = 1; i <= n; i++)
+{
+if (i % 2 == 0)
+{
+sum = sum + i;
+https://E-next.in
+Console.Write(i + "+");
+}
+}
+Console.Write("=" + sum);
+Console.ReadKey();
+}
+}
+}
+Output
+https://E-next.in
+Practical No 13
+write a program to print a pattern in c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace pattern
+{
+class Program
+{
+static void Main(string[] args)
+{
+int row, col, sp;
+for (row = 1; row <= 5; row++)
+{
+for (sp = 1; sp <= 5 - row; sp++)
+Console.Write(" ");
+for (col = 1; col <= row; col++)
+Console.Write(row + " ");
+Console.WriteLine();
+https://E-next.in
+Console.Read();
+}
+}
+}
+}
+Output
+https://E-next.in
+Practical No 14
+write a destructor program in c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace destructor
+{
+class Program
+{
+static int n;
+public Program()
+{
+n++;
+Console.WriteLine("object created: " + n);
+}
+~Program()
+{
+Console.WriteLine("object destroyed: " + n);
+https://E-next.in
+n--;
+Console.ReadKey();
+}
+}
+class check
+{
+public static void Main()
+{
+Program p1 = new Program();
+Program p2 = new Program();
+Console.ReadKey();
+}
+}
+}
+Output
+https://E-next.in
+ Practical No 15
+Aim: Write C# Program to find Grade on Basis Of Average.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace ConsoleApplication1
+{
+ class Program
+ {
+ static void Main(string[] args)
+ {
+ Console.WriteLine(" Enter Your Percentage: ");
+ float avg = Convert.ToSingle(Console.ReadLine());
+ if (avg > 75 && avg < 100)
+ {
+ Console.WriteLine("Distinction");
+ }
+ else if (avg > 60 && avg <= 75)
+ {
+ Console.WriteLine("A Grade ");
+ }
+ else if (avg > 50 && avg <= 60)
+ {
+ Console.WriteLine(" B Grade ");
+ }
+ else if (avg > 40 && avg <= 50)
+ {
+ Console.WriteLine(" C Grade ");
+ }
+ else if (avg > 100)
+ {
+ Console.WriteLine(" Invalid Marks ");
+ }
+ else
+ {
+ Console.WriteLine("Fail");
+ }
+https://E-next.in
+ Console.ReadKey();
+ }
+ }
+}
+Output:
+
+https://E-next.in
+PRACTICAL NO:16
+Aim: Write a C# Program to Demonstrate Method Overload.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace over.cs
+{
+ class Program
+ {
+ public void disp(char c)
+ {
+ Console.WriteLine(c);
+ }
+ public void disp(char c, int num)
+ {
+ Console.WriteLine(c + " " + num);
+ }
+ }
+ class dot
+ {
+ static void Main(string[] args)
+ {
+ Program a = new Program();
+ a.disp('t');
+ a.disp('a', 10);
+ Console.ReadKey();
+ }
+ }
+}
+Output:
+
+https://E-next.in
+PRACTICAL NO:17
+Aim: Write a Program to demonstrate Single Inheritance.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace ConsoleApplication4
+{
+ class Program
+ {
+ string name;
+ int age;
+ public void get(string s, int a)
+ {
+ name = s;
+ age = a;
+ }
+ public void show()
+ {
+ Console.WriteLine("Name:"+name);
+ Console.WriteLine("Age:"+age);
+ }
+ }
+ class emoloyee:Program
+ {
+ public void display()
+ {
+ Console.WriteLine("Congratulation!!!!!!!You Have Been Selected");
+ }
+ }
+
+ class singleinherit
+ {
+https://E-next.in
+ static void Main(string[] args)
+ {
+ Console.WriteLine();
+ Console.WriteLine("Showing PErson's Data");
+ Console.WriteLine("----------------------");
+ Program p=new Program();
+ p.get("Rakesh",33);
+ p.show();
+ Console.WriteLine();
+ Console.WriteLine("Showing Employee's Data");
+ Console.WriteLine("-----------------------");
+ emoloyee e=new emoloyee();
+ e.get("Sanjeela",31);
+ e.show();
+ e.display();
+ Console.ReadKey();
+ }
+ }
+}
+Output:
+
+https://E-next.in
+PRACTICAL NO:18
+Aim: Write a Program to demonstrate Multilevel Inheritance
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace multilevel.cs
+{
+ class person
+ {
+ string name;
+ int age;
+ public person(string s, int a)
+ {
+ name = s;
+ age = a;
+ }
+ public void show()
+ {
+ Console.WriteLine("Name:" + name);
+ Console.WriteLine("Age:" + age);
+ }
+ }
+ class employee : person
+ {
+ string designation;
+ public employee(string s, int a, string d) :base(s,a)
+ {
+ designation = d;
+ }
+ public void show()
+ {
+ base.show();
+https://E-next.in
+ Console.WriteLine("Designation" + designation);
+ }
+ }
+ class payroll : employee
+ {
+ int salary;
+ public payroll(string s, int a, string d, int sal)
+ : base(s, a, d)
+ {
+ salary = sal;
+ }
+ public void show()
+ {
+ base.show();
+ Console.WriteLine("Salary:" + salary);
+ }
+ }
+ class multilevel
+ {
+ static void Main(string[] args)
+ {
+ Console.WriteLine();
+ Console.WriteLine("Showing Person's Data");
+ Console.WriteLine("----------------------");
+ person p = new person("Rakesh", 33);
+ p.show();
+ Console.WriteLine();
+ Console.WriteLine("Showing Employee's Data");
+ Console.WriteLine("-------------------------");
+ employee e = new employee("Rakesh", 33, "Deputy manager");
+ e.show();
+ Console.WriteLine();
+ Console.WriteLine("Showing payroll Data");
+ Console.WriteLine("------------------");
+ payroll pay=new payroll("Rakesh",33,"Deputy manager",20000);
+https://E-next.in
+ pay.show();
+
+ Console.ReadKey();
+ }
+ }
+}
+Output:
+
+https://E-next.in
+PRACTICAL NO:19
+Aim: Write C# Program To Demonstrate Interface.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace ConsoleApplication3
+{
+ interface Square
+ {
+ int sqr();
+ }
+ interface Double
+ {
+ int ddouble();
+ }
+ class interfaceTest : Square, Double
+ {
+ int n;
+ public interfaceTest(int n)
+ {
+ this.n = n;
+ }
+ public int sqr()
+ {
+ return n * n;
+ }
+ public int ddouble()
+ {
+ return n * 2;
+ }
+ }
+ class Exampleinterface
+ {
+ static void Main(string[] args)
+ {
+ int r;
+ interfaceTest it = new interfaceTest(10);
+ Square s = (Square)it;
+https://E-next.in
+ r = s.sqr();
+ Console.WriteLine("Square of 10:" + r);
+ Double d = (Double)it;
+ r = d.ddouble();
+ Console.WriteLine("Double of 10:" + r);
+ Console.ReadKey();
+ }
+ }
+}
+Output:
+https://E-next.in
+PRACTICAL NO:20
+Aim: Write a Program to find factorial of a number
+Source Code:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace ConsoleApplication11
+{
+Public delegate intdele(int x);
+classExampleDe1
+ {
+Public static int fact(int n){
+int f=1;
+while(n >= 1){
+ f = f*n;
+ n--;
+ }
+return f;
+ }
+publicstaticint oddeven(int n){
+if(n%2==0)
+return 1;
+else
+return 0;
+ }
+publicstaticvoid Main()
+ {
+dele d1=newdele(fact);
+https://E-next.in
+int r = d1(5);
+Console.WriteLine("Factorial:" + r);
+dele d2 = newdele(oddeven);
+ r = d2(5);
+if (r == 0)
+Console.WriteLine("Input number is odd");
+else
+Console.WriteLine("Input number is even");
+Console.ReadKey();
+ }
+ }
+ }
+Output:
+https://E-next.in
+PRACTICAL NO 21
+Aim: Design a Form that consist of one label and one button.
+Set the Text Property of Button to Click and Label Property to Null.
+Source Code:
+Form1.cs
+using System;
+usingSystem.Windows.Forms;
+namespaceButtonExample
+{
+public partial class Form1 : Form
+{
+public Form1()
+{
+InitializeComponent();
+}
+private void button1_Click(object sender, EventArgs e)
+{
+Label1.Text=”Welcome to the World of .Net”;
+}
+}
+https://E-next.in
+}
+Output:
+https://E-next.in
+PRACTICAL NO 22
+Aim: Design a form which consist of three labels, two textbox,one
+button
+Source Code:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+namespace form2
+{
+publicpartialclassForm1 : Form
+ {
+public Form1()
+ {
+ InitializeComponent();
+ }
+privatevoid button1_Click(object sender, EventArgs e)
+ {
+ label3.Text = "Name: " + textBox1.Text +
+System.Environment.NewLine + "Age: " + textBox2.Text;
+ }
+https://E-next.in
+ }
+}
+Output:
+https://E-next.in
+Practical No 23
+Aim: Write a program of addition of two numbers taken from user and
+display it in other label(Use Labels,Textbox,button)
+Source Code:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+namespace form1
+{
+publicpartialclassForm1 : Form
+ {
+public Form1()
+ {
+ InitializeComponent();
+ }
+privatevoid button1_Click(object sender, EventArgs e)
+ {
+int a = int.Parse(textBox1.Text);
+int b = int.Parse(textBox2.Text);
+int c = a + b;
+ label3.Text = "Addition of numbers is ----> " + c;
+https://E-next.in
+ }
+ }
+}
+Output:
+https://E-next.in
+Practical No 24
+Aim:Write a program for displaying the use of radiobutton and
+checkboxses.(Use a label,textbox,checkbox,button,radio button)
+Source Code:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+namespace WindowsFormsApplication1
+{
+publicpartialclassForm1 : Form
+ {
+string gender;
+string strHobby = "";
+public Form1()
+ {
+ InitializeComponent();
+ }
+privatevoid button1_Click(object sender, EventArgs e)
+ {
+https://E-next.in
+ label5.Text = "Name:" + textBox1.Text +
+System.Environment.NewLine + "Age:" + textBox2.Text +
+System.Environment.NewLine + "Gender:" + gender +
+System.Environment.NewLine + "Hobbies:" + strHobby;
+ }
+privatevoid radioButton1_CheckedChanged(object sender, EventArgs e)
+ {
+if (radioButton1.Checked == true)
+ gender = radioButton1.Text;
+ radioButton2.Checked = false;
+ }
+privatevoid radioButton2_CheckedChanged(object sender, EventArgs e)
+ {
+if (radioButton2.Checked == true)
+ gender = radioButton2.Text;
+ }
+privatevoid checkBox1_CheckedChanged(object sender, EventArgs e)
+ {
+if (checkBox1.Checked == true)
+ strHobby = checkBox1.Text + System.Environment.NewLine;
+ }
+privatevoid checkBox2_CheckedChanged(object sender, EventArgs e)
+ {
+if (checkBox2.Checked == true)
+ strHobby = strHobby + checkBox2.Text +
+System.Environment.NewLine;
+ }
+privatevoid checkBox3_CheckedChanged(object sender, EventArgs e)
+https://E-next.in
+ {
+if (checkBox3.Checked == true)
+ strHobby = strHobby + checkBox3.Text;
+ }
+ }
+}
+Output:
+https://E-next.in
+Practical No 25
+Aim: Design a form using RichTextBox.
+Source Code:
+using System;
+usingSystem.Collections.Generic;
+usingSystem.ComponentModel;
+usingSystem.Data;
+usingSystem.Drawing;
+usingSystem.Linq;
+usingSystem.Text;
+usingSystem.Windows.Forms;
+namespace WindowsFormsApplication4
+{
+publicpartialclassForm1 : Form
+ {
+stringstrGender;
+public Form1()
+ {
+InitializeComponent();
+ }
+privatevoid radioButton1_CheckedChanged(object sender, EventArgs e)
+ {
+if (radioButton1.Checked == true)strGender = radioButton1.Text;
+ }
+privatevoid radioButton2_CheckedChanged(object sender, EventArgs e)
+ {
+https://E-next.in
+if(radioButton2.Checked == true) strGender = radioButton2.Text;
+ }
+privatevoid button2_Click(object sender, EventArgs e)
+ {
+richTextBox1.SaveFile(@"D:\Duggu\data0\MeraFile.RTF");
+richTextBox1.Clear();
+ }
+privatevoid button3_Click(object sender, EventArgs e)
+ {
+ richTextBox1.Text ="Name:" + textBox1.Text +
+Environment.NewLine + "Age:"
+ +textBox2.Text+Environment.NewLine+"Gender:"+strGender;
+ }
+privatevoid button1_Click(object sender, EventArgs e)
+ {
+OpenFileDialog open = newOpenFileDialog();
+if (open.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+richTextBox1.LoadFile(open.FileName,
+RichTextBoxStreamType.RichText);
+ }
+ }
+}
+https://E-next.in
+Output:
+https://E-next.in
+PRACTICAL NO 26
+Aim: Write a Code To Convert String Into Upper Case.
+SOURCE CODE:
+<!-- directives -->
+<% @Page Language="C#" %>
+<!-- code section -->
+<scriptrunat="server">
+ private void convertoupper(object sender, EventArgs e)
+ {
+ string str = mytext.Value;
+ changed_text.InnerHtml = str.ToUpper();
+ }
+</script>
+<!-- Layout -->
+<html>
+<head>
+<title> Change to Upper Case </title>
+</head>
+<body>
+<h3> Conversion to Upper Case </h3>
+<formid="Form1"runat="server">
+<inputrunat="server"id="mytext"type="text"/>
+https://E-next.in
+<inputrunat="server"id="button1"type="submit"value="Enter..."OnSer
+verClick="convertoupper"/>
+<hr/>
+<h3> Results: </h3>
+<spanrunat="server"id="changed_text"/>
+</form>
+</body>
+</html>
+OUTPUT:
+https://E-next.in
+PRACTICAL NO 27
+Aim: Write A Code on Server Control.
+SOURCE CODE:
+<%@PageLanguage="C#"AutoEventWireup="true"CodeBehind="Defaul
+t.aspx.cs"
+Inherits="server_side._Default"%>
+<!DOCTYPEhtmlPUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<scriptrunat="server">
+</script>
+ protected void Button1_Click(object sender, EventArgs e) {
+ if (!String.IsNullOrEmpty(TextBox1.Text)) {
+ // Access the HttpServerUtility methods through
+ // the intrinsic Server object.
+ Label1.Text = "Welcome, " + Server.HtmlEncode(TextBox1.Text) + ".
+<br/> The url is " + Server.UrlEncode(Request.Url.ToString())
+ }
+}
+ }
+<htmlxmlns="http://www.w3.org/1999/xhtml">
+<headid="Head1"runat="server">
+<title>Untitled Page</title>
+https://E-next.in
+</head>
+<body>
+<formid="form1"runat="server">
+<div>
+ Enter your name:
+<br/>
+<asp:TextBoxID="TextBox1"runat="server"></asp:TextBox>
+<asp:ButtonID="Button1"runat="server"OnClick="Button1_Click"Text="
+Submit"/>
+<br/>
+<asp:LabelID="Label1"runat="server"/>
+</div>
+</form>
+</body>
+</html>
+OUTPUT:
+https://E-next.in
+PRACTICAL NO 28
+Aim: Write A Code on Server Control.
+SOURCE CODE:
+using System;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+publicpartialclass_Default : System.Web.UI.Page
+{
+protectedvoid Page_Load(object sender, EventArgs e)
+ {
+ }
+protectedvoid Button1_Click(object sender, EventArgs e)
+ {
+if (!String.IsNullOrEmpty(TextBox1.Text)) {
+// Access the HttpServerUtility methods through
+// the intrinsic Server object.
+ Label1.Text = "Welcome, " + Server.HtmlEncode(TextBox1.Text)
++ ". <br/> The url is " + Server.UrlEncode(Request.Url.ToString());
+ }
+https://E-next.in
+ }
+}
+OUTPUT:
+https://E-next.in
+PRACTICAL NO 29
+Aim: Write a Code on CSS.
+SOURCE CODE:
+CSS Practical
+Home.apsx
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeFile="home.aspx.cs" Inherits="home" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+<style type="text/css">
+ .style1
+ {
+ width: 100%;
+ }
+ .style2
+ {
+ width: 176px;
+ }
+ .style3
+ {
+ width: 176px;
+ height: 88px;
+ }
+ .style4
+ {
+ height: 88px;
+https://E-next.in
+ }
+</style>
+</head>
+<body>
+<form id="form1" runat="server">
+<h2 style="text-align: center">
+<asp:Label ID="Label1" runat="server" style="font-weight: 700;textdecoration: underline;font-family: 'Lucida Calligraphy';" Text="Online
+Registration">
+</asp:Label>
+</h2>
+<table cellpadding="5" class="style1">
+<tr>
+<td id="lblname" class="style2">
+<asp:Label ID="Label2" runat="server" style="font-weight:700"
+Text="Name" Font-Size="Large"></asp:Label>
+</td>
+<td>
+<asp:TextBox ID="txtname" runat="server"
+Width="158px"></asp:TextBox>
+</td>
+</tr>
+<tr>
+<td id="lblage" class="style2">
+<asp:Label ID="Label3" runat="server" style="font-weight: 700"
+Text="Age" Font-Size="Large"></asp:Label>
+</td>
+<td>
+<asp:TextBox ID="txtage" runat="server"
+Width="158px"></asp:TextBox>
+</td>
+</tr>
+https://E-next.in
+<tr>
+<td id="lbladdress" class="style3">
+<asp:Label ID="Label4" runat="server" style="font-weight:700"
+Text="Address" Font-Size="Large"></asp:Label>
+</td>
+<td class="style4">
+<asp:TextBox ID="txtadress" runat="server" Height="55px"
+TextMode="MultiLine"></asp:TextBox>
+</td>
+</tr>
+<tr>
+<td id="lblgender" class="style2">
+<asp:Label ID="Label5" runat="server" style="font-weight: 700"
+Text="Gender" Font-Size="Large"></asp:Label>
+</td>
+<td>
+<asp:RadioButtonList ID="rbtn1" runat="server" style="font-weight:
+700">
+<asp:ListItem>Male</asp:ListItem>
+<asp:ListItem>Female</asp:ListItem>
+</asp:RadioButtonList>
+</td>
+</tr>
+<tr>
+<td id="lblhandicapped" class="style2">
+<asp:Label ID="Label6" runat="server" style="font-weight: 700"
+Text="Handicapped" Font-Size="Large"></asp:Label>
+</td>
+<td>
+<asp:RadioButtonList ID="rbtn2" runat="server" style="font-weight:
+700">
+<asp:ListItem>Yes</asp:ListItem>
+<asp:ListItem>No</asp:ListItem>
+https://E-next.in
+</asp:RadioButtonList>
+</td>
+</tr>
+<tr>
+<td id="lbllangknw" class="style2">
+<asp:Label ID="Label7" runat="server" style="font-weight: 700"
+Text="Language Known" Font-Size="Large"></asp:Label>
+</td>
+<td>
+<asp:CheckBoxList ID="CheckBoxList" runat="server" Font-Bold="true"
+Height="62px">
+<asp:ListItem>English</asp:ListItem>
+<asp:ListItem>Hindi</asp:ListItem>
+</asp:CheckBoxList>
+</td>
+</tr>
+</table>
+<br />
+<asp:Button ID="btnsubmit" runat="server" OnClick="btnsubit_Click"
+style="font-weight: 700;text-align: center" Text="Submit" />
+</form>
+</body>
+</html>
+Home2.aspx
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeFile="home2.aspx.cs" Inherits="home2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="servers
+https://E-next.in
+ font-weight: 700;
+ }
+ .style2
+ {
+ width: 163px;
+ }
+ .style3
+ {
+ width: 163px;
+ height:23px;
+ }
+ .style4
+ {
+ height: 23px;
+ }
+</style>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<table class="style1">
+<tr>
+<td class="style2">
+<asp:Label ID="Label1" runat="server" Text="Name: " FontSize="Large">
+</asp:Label>&nbsp;<br /><br /></td>
+<td>
+<asp:Label ID="lblname" runat="server" FontSize="Large"></asp:Label>
+<br />
+</td>
+</tr>
+https://E-next.in
+<tr>
+<td class="style2">
+<asp:Label ID="Label2" runat="server" Text="Age: " FontSize="Large"></asp:Label>
+<br /><br /></td>
+<td>
+<asp:Label ID="lblage" runat="server" FontSize="Large"></asp:Label><br />
+</td>
+</tr>
+<tr>
+<td class="style2">
+<asp:Label ID="Label3" runat="server" Text="Address :" FontSize="Large"></asp:Label>
+<br /><br /></td>
+<td>
+<asp:Label ID="lbladdress" runat="server" FontSize="Large"></asp:Label><br />
+</td>
+</tr>
+<tr>
+<td class="style2">
+<asp:Label ID="Label4" runat="server" Text="Gender:" FontSize="Large"></asp:Label>
+<br /><br /></td>
+<td>
+<asp:Label ID="lblgender" runat="server" FontSize="Large"></asp:Label>
+</td>
+</tr>
+<tr>
+<td class="style2">
+https://E-next.in
+<asp:Label ID="Label6" runat="server" Text="Handicapped :" FontSize="Large"></asp:Label>
+<br /><br /></td>
+<td>
+<asp:Label ID="lblhandicapped" runat="server" FontSize="Large"></asp:Label>
+<br /></td>
+</tr>
+<tr>
+<td class="style3">
+<asp:Label ID="Label5" runat="server" Text="Language Known :" FontSize="Large"></asp:Label>
+<br /><br /></td>
+<td class="style4">
+<asp:Label ID="lbllangknw" runat="server" FontSize="Large"></asp:Label><br />
+</td>
+</tr>
+</table>
+</div>
+</form>
+</body>
+</html>
+Home.aspx.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+https://E-next.in
+using System.Web.UI;
+using System.Web.UI.WebControls;
+public partial class home : System.Web.UI.Page
+{
+ protected void btnsubit_Click(object sender, EventArgs e)
+ {
+ string s1 = "";
+ foreach (ListItem i in CheckBoxList.Items)
+ {
+ if (i.Selected == true)
+ s1 += i.Value + " ";
+ }
+ Response.Redirect("home2.aspx?name=" + txtname.Text +
+"&age=" + txtage.Text + "&address=" + txtadress.Text + "&gender=" +
+rbtn1.SelectedValue + "&handicapped=" + rbtn2.SelectedValue +
+"&language=" + s1);
+ }
+}
+Home2.aspx.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+public partial class home2 : System.Web.UI.Page
+{
+ protected void Page_Load(object sender, EventArgs e)
+ {
+ lblname.Text = Request.QueryString["name"];
+https://E-next.in
+ lblage.Text = Request.QueryString["age"];
+ lbladdress.Text = Request.QueryString["address"];
+ lblgender.Text = Request.QueryString["gender"];
+ lblhandicapped.Text = Request.QueryString["handicapped"];
+ lbllangknw.Text = Request.QueryString["language"];
+ }
+}
+OUTPUT:
+https://E-next.in
+PRACTICAL NO 30
+Aim: Programs using ASP.NET Server Controls
+A] Web User Control
+SOURCE CODE:
+WebuserControl.ascx
+<%@ Control Language="C#" AutoEventWireup="true"
+CodeFile="WebUserControl.ascx.cs" Inherits="WebUserControl" %>
+<asp:Label ID="lblnum1" runat="server" Text="Enter first Number :"
+Font-Bold="true" Font-Size="Medium" style="font-size:
+large"></asp:Label>
+<asp:TextBox ID="txtnum1" runat="server" Width="152px"
+style="margin-left: 0px" ></asp:TextBox>
+<asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+runat="server" ControlToValidate="txtnum1" ErrorMessage="The field
+Cannot Be Empty" Font-Bold="true" Font-Size="Small" ForeColor="Red"
+style="font-size:inherit"></asp:RequiredFieldValidator>
+<p>
+<asp:Label ID="lblnum2" runat="server" Text="Enter second Number :"
+Font-Bold="True" Font-Size="Medium" style="fontsize:large"></asp:Label>
+<asp:TextBox ID="txtnum2" runat="server"
+Width="151px"></asp:TextBox>
+<asp:RequiredFieldValidator ID="RequiredFieldValidator2"
+runat="server" ControlToValidate="txtnum2" ErrorMessage="The field
+canno be empty" ForeColor="#FF3300" Font-Bold="True" FontSize="Small" style="font-size:
+large"></asp:RequiredFieldValidator></p>
+<p>
+<br />
+https://E-next.in
+<asp:Label ID="lbloperation" runat="server" Text="Select any operation
+:" style="font-size:large" Font-Bold="True" FontSize="Medium"></asp:Label>
+</p>
+<p>
+<asp:RadioButtonList ID="rdbbtnlist" runat="server" style="font-size:
+large">
+<asp:ListItem>Addition</asp:ListItem>
+<asp:ListItem>Subtraction</asp:ListItem>
+<asp:ListItem>Multiplication</asp:ListItem>
+<asp:ListItem>Division</asp:ListItem>
+</asp:RadioButtonList>
+</p>
+<p>
+<asp:Label ID="lbloutput" runat="server" Font-Bold="True" FontSize="Larger" ForeColor="#009900"></asp:Label>
+</p>
+<p>
+<asp:Button ID="btnclick" runat="server" Text="Click Here" FontBold="True" Font-Size="Medium" OnClick="btnclick_Click"
+Width="108px" style="font-size:large"/>
+</p>
+WebUserControl.ascx.cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+public partial class WebUserControl : System.Web.UI.UserControl
+https://E-next.in
+{
+ protected void btnclick_Click(object sender, EventArgs e)
+ {
+ int a;
+ int num1 = Convert.ToInt32(txtnum1.Text);
+ int num2 = Convert.ToInt32(txtnum2.Text);
+ if (rdbbtnlist.SelectedValue == "Addition")
+ {
+ a = num1 + num2;
+ lbloutput.Text = "The addition of " + num1 + "and " + num2 + " is
+" + a;
+ }
+ else if (rdbbtnlist.SelectedValue == "Subtraction")
+ {
+ a = num1 - num2;
+ lbloutput.Text = "The addition of " + num1 + "and " + num2 + " is
+" + a;
+ }
+ else if (rdbbtnlist.SelectedValue == "Multiplication")
+ {
+ a = num1 * num2;
+ lbloutput.Text = "The addition of " + num1 + "and " + num2 + " is
+" + a;
+ }
+ else if (rdbbtnlist.SelectedValue == "Division")
+ {
+ a = num1 / num2;
+ lbloutput.Text = "The addition of " + num1 + "and " + num2 + " is
+" + a;
+ }
+ else
+ {
+ lbloutput.Text = "Please select any operation";
+https://E-next.in
+ }
+ }
+}
+Default.aspx
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeFile="Default2.aspx.cs" Inherits="Default2" %>
+<%@ Register Src="~/WebUserControl.ascx"
+TagName="WebUserControl" TagPrefix="UserControl" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<UserControl:WebUserControl ID="raji" runat="server" />
+</div>
+</form>
+</body>
+</html>
+https://E-next.in
+ B] Navigation Controls
+Web.sitemap
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File1.0" >
+<siteMapNode url="Home.aspx" title="Home" description="Home
+Page">
+<siteMapNode url="Products.aspx" title="Products"
+description="products Page">
+<siteMapNode url="TV.aspx" title="TV" description="tv page" />
+<siteMapNode url="Dvd.aspx" title="DVD's" description="dvd page" />
+<siteMapNode url="Lcd.aspx" title="LCD's" description="LCD Page"/>
+<siteMapNode url="Dth.aspx" title="DTH" description="DTH Page"/>
+</siteMapNode>
+<siteMapNode url="Fashion.aspx" title="Fashions"
+description="fashion Page">
+<siteMapNode url="Shoes.aspx" title="Shoes" description="Shoes
+Page"/>
+<siteMapNode url="Clothes.aspx" title="Clothes" description="clothes
+Page"/>
+</siteMapNode>
+</siteMapNode>
+</siteMap>
+Home.aspx
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeFile="Home.aspx.cs" Inherits="Home" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+https://E-next.in
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<h2>&nbsp;<asp:SiteMapDataSource ID="SiteMapDataSource1"
+runat="server" StartingNodeUrl="~/Home.aspx" /></h2>
+<asp:Menu ID="Menu1" runat="server"
+DataSourceID="SiteMapDataSource1"></asp:Menu>
+<asp:TreeView ID="TreeView1" runat="server"
+DataSourceID="SiteMapDataSource1"></asp:TreeView>
+</div>
+</form>
+</body>
+</html>
+Dth.aspx
+<%@ Page Language="C#" AutoEventWireup="true"
+CodeFile="Dth.aspx.cs" Inherits="Dth" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>DTH</title>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<asp:SiteMapPath ID="SiteMapPath1" runat="server" style="fontweight: 700"></asp:SiteMapPath>
+<p>
+https://E-next.in
+ DTH stands for Direct to home television. DTH is defined as the
+reception of satellite programmes with a personal dish in an
+ individual home.DTH does away with the need for the local cable
+operator and puts the broadaster direcctly in touch with the
+ consumer. Only cable operators can recieve satellite programmes
+and they then distribute them to individual homes.
+</p>
+</div>
+</form>
+</body>
+</html>
+OUTPUT:
+https://E-next.in
+https://E-next.in
+https://E-next.in
+https://E-next.in
+PRACTICAL NO 31
+Aim: Write A Code On ADO.NET.
+Source Code:
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Collections.Generic;
+namespace WebApplication1
+{
+ public partial class WebForm1 : System.Web.UI.Page
+ {
+ SqlDataAdapter da = new SqlDataAdapter();
+ SqlConnection con = new SqlConnection();
+ SqlCommand cmd = new SqlCommand();
+ DataSet ds = new DataSet();
+ string str;
+ protected void Page_Load(object sender, EventArgs e)
+ {
+ con.ConnectionString = "Data
+Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\SAHIL\\Documents\\Students.mdf;Inte
+grated Security=True;Connect Timeout=30";
+ con.Open();
+ Label4.Text = "Connected To Server";
+ con.Close();
+ }
+ protected void Button1_Click(object sender, EventArgs e)
+ {
+ str = "insert into stud_mast values(" + TextBox1.Text + " , ' " + TextBox2.Text + " ' , " +
+TextBox3.Text + ")";
+ con.Open();
+ cmd = new SqlCommand(str,con);
+ cmd.ExecuteNonQuery();
+ con.Close();
+ Label4.Text = " Save Successfull ";
+https://E-next.in
+ TextBox1.Text = " ";
+ TextBox2.Text = " ";
+ TextBox3.Text = " ";
+ }
+ protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+ {
+ }
+ protected void Button4_Click(object sender, EventArgs e)
+ {
+ str = "select * from stud_mast where stud_id= " + DropDownList1.Text + " ";
+ da = new SqlDataAdapter(str, con);
+ ds = new DataSet();
+ da.Fill(ds,"stud_mast");
+ TextBox1.Text = ds.Tables["stud_mast"].Rows[0]["stud_id"].ToString();
+ TextBox2.Text = ds.Tables["stud_mast"].Rows[0]["stud_name"].ToString();
+ TextBox3.Text = ds.Tables["stud_mast"].Rows[0]["phn_no"].ToString();
+ }
+ protected void Button2_Click(object sender, EventArgs e)
+ {
+ str = "update stud_mast set stud_name= ' " + TextBox2.Text + " ', phn_no= "
++TextBox3.Text+" where stud_id= "+DropDownList1.Text+" ";
+ con.Open();
+ cmd = new SqlCommand(str, con);
+ cmd.ExecuteNonQuery();
+ con.Close();
+ Label4.Text = " Update Successfull ";
+ }
+ protected void Button3_Click(object sender, EventArgs e)
+ {
+ str = "delete from stud_mast where stud_id=" + DropDownList1.Text + " ";
+ con.Open();
+ cmd = new SqlCommand(str, con);
+ cmd.ExecuteNonQuery();
+ con.Close();
+ Label4.Text = " Update Successfull ";
+ }
+ }
+}
+https://E-next.in
+Output:-
+
+
+https://E-next.in
+
+https://E-next.in
+PRACTICAL NO 32
+Aim: Write a code on AJAX.
+SOURCE CODE:
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title></title>
+</head>
+<body>
+ <div id="demo"><h2>Let AJAX change this text</h2></div>
+<button type="button" onclick="loadDoc()">Change Content</button>
+<script>
+ function loadDoc() {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function () {
+ if (this.readyState == 4 && this.status == 200) {
+ document.getElementById("demo").innerHTML =
+this.responseText;
+ }
+ };
+ xhttp.open("GET", "ajax_info.txt", true);
+ xhttp.send();
+ }
+</script>
+</body>
+</html>
+https://E-next.in
+OUTPUT:
+https://E-next.in
+https://E-next.in
